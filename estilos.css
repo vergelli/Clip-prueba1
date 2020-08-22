@@ -1,0 +1,58 @@
+table {
+    width: 600px;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+td {
+    border: 1px solid black;
+    padding: 2.5px;
+    text-align: center;
+}
+th {
+    border: 1px solid black;
+    padding: 1px;
+    }
+tfoot {
+    text-align: center;
+}
+header{
+
+    position:relative;
+    margin: 20px auto;
+    widows: 950px;
+    height:120px;
+    background: rgb(192, 192, 192);
+    border: 2px solid black;
+}
+
+main{
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#titulo{
+
+    position:relative;
+    margin: 32px 320px;
+    font-size: 28px;
+    color: black;
+}
+
+#reporte1{
+
+    border: 1px solid gray;
+   
+}
+
+#tablita{
+
+    margin: 10px 120px;
+   
+}
+
+body{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
