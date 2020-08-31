@@ -42,7 +42,8 @@ main{
 
 #titulo{
 
-    margin: 32px 320px;
+    padding-top: 30px;
+    padding-left: 500px;
     font-size: 28px;
     color: black;
 }
@@ -78,9 +79,9 @@ li {
     border-right: 1px solid #bbb;
 }
 
-a {
+.nav_button_active {
     display: block;
-    padding: 0px;
+    padding: 10px;
     background-color: rgb(230, 229, 222);
 }
 
@@ -91,7 +92,7 @@ li a:hover {
 .nav_button{
 
     display: block;
-    padding: 8px;
+    padding: 10px;
     background-color: rgb(230, 229, 222);
 }
 
@@ -107,3 +108,112 @@ li a:hover {
     margin: 150px 300px;
 
 }
+
+.row{
+    padding-right: 400px;
+    padding-left: 30px;
+}
+
+.form-group{
+
+    padding-right: 400px;
+    padding-left: 30px;
+
+}
+
+.form-check{
+
+    padding-right: 300px;
+    padding-left: 320px;
+
+}
+
+
+.form-check-label{
+
+    padding-right: 30px;
+    padding-left: 0px;
+
+}
+
+.form-check-input{
+
+    padding-right: 30px;
+    padding-left: 600px;
+
+}
+
+.btn-primary{
+
+    padding-right: 40px;
+    padding-left: 40px;
+
+}
+
+#boton_sumit{
+
+    padding-right: 300px;
+    padding-left: 300px;
+
+}
+
+/*
+================ Registro ======================
+*/
+
+#aviso{
+
+    padding-left: 30px;
+    padding-right: 800px;
+
+}
+
+/*
+================ ACERTIJO ======================
+*/
+
+
+#caja_boton_acertijo{
+
+    padding-left: 300px;
+    padding-right: 910px;
+
+}
+
+#boton_acertijo{
+
+    display: block;
+    padding: 5px;
+    background-color: rgb(230, 229, 222);
+    padding-left: 8px;
+
+
+}
+
+
+#acertijo_pregunta{
+
+    padding-left: 300px;
+
+}
+
+#acertijo_respuesta{
+
+    padding-left: 300px;
+
+
+}
+
+#acertijo_muestra_resultado{
+
+    padding-left: 300px;
+
+
+}
+
+#acertijo_boton{
+
+    padding-left: 300px;
+
+}
+

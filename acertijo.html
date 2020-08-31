@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src = "acertijo-scripts.js"></script>
     <meta name="description" content="Atributos de Tablas">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilos.css" type="text/css">
@@ -30,9 +31,29 @@
     </div>
     <br>
     <br>
-    <br>
-    <div id ="construccion">
-        <p>Esta pagina está en construcción</p>
+    <div id ="caja_boton_acertijo">
+            <a id = "boton_acertijo" href="acertijo.html">Actividad - Acertijo </a>
     </div>
+
+    <br>
+    <div id ="acertijo_pregunta">
+        <p>Supongamos que la cantidad total de contagiados por covid-19 al dia de la fecha es de 390.000.<br>La cantidad de personas fallecidas es de 8.000 y las altas medicas es de 280.000<br>¿Cuantas personas estan transitando la enfermedad al dia de hoy?</p>
+    </div>
+
+    <div id = "acertijo_respuesta">
+    <input type="text" id ="acertijo_respuesta_input" placeholder="Respuesta">
+    </div>
+    <div id = "acertijo_muestra_resultado">
+        <br>
+        <div class="content"><span id='value'></span></div>
+        <br>
+
+    </div>
+    <br>
+    <br>
+    <div id = "acertijo_boton">
+        <button type="button" id="acertijo_boton_summit" onclick="validar(); contador();">Enviar</button>
+    </div>
+
 </body>
 </html>

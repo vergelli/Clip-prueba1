@@ -24,48 +24,50 @@
 
     <div id ="separador_navegador">
         <ul>
-            <li><a class = "nav_button active" href="practica-main3.html">Home</a></li>
-            <li><a class = "nav_button active" href="practica-login-page.html">Log in</a></li>
-            <li><a class = "nav_button active" href="practica-contacto.html">Contacto</a></li>
+            <li><a class = "nav_button_active" href="practica-main3.html">Home</a></li>
+            <li><a class = "nav_button_active" href="practica-login-page.html">Ingresar</a></li>
+            <li><a class = "nav_button_active" href="practica-registrar.html">Registrar</a></li>     
+            <li><a class = "nav_button_active" href="practica-contacto.html">Contacto</a></li>
             <li style="float:right"><a class="nav_button active" href="practica-acerca-de.html">Acerca de Mi</a></li>
         </ul>
     </div>
+    <br>
 
     <div>
         <form class="text-center border border-light p-5" action="#!">
 
-            <p class="h4 mb-4">Sign in</p>
+            <p class="h4 mb-4">Ingresar</p>
 
             <!-- Email -->
             <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
 
             <!-- Password -->
-            <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+            <input type="contraseña" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
 
             <div class="d-flex justify-content-around">
                 <div>
                     <!-- Remember me -->
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                        <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                        <label class="custom-control-label" for="defaultLoginFormRemember">Recordar cuenta</label>
                     </div>
                 </div>
                 <div>
                     <!-- Forgot password -->
-                    <a href="">Forgot password?</a>
+                    <a href="">¿Olvidaste tu contraseña?</a>
                 </div>
             </div>
 
             <!-- Sign in button -->
-            <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+            <button class="btn btn-info btn-block my-4" type="submit">Ingresar</button>
 
             <!-- Register -->
-            <p>Not a member?
-                <a href="">Register</a>
+            <p>Nuevo usuario
+                <a href="practica-registrar.html">Registrar</a>
             </p>
 
             <!-- Social login -->
-            <p>or sign in with:</p>
+            <p>O ingresa con:</p>
 
             <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
             <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
