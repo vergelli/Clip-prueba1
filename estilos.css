@@ -52,7 +52,7 @@ main{
 
     border: 1px solid gray;
     background: rgb(230, 229, 222);
-   
+    padding-right: 500px;
 }
 
 #tablita{
@@ -76,7 +76,6 @@ ul {
 
 li {
     float: left;
-    border-right: 1px solid #bbb;
 }
 
 .nav_button_active {
@@ -169,13 +168,38 @@ li a:hover {
 }
 
 /*
-================ ACERTIJO ======================
+================ BOTON DATOS HISTORICOS y ACERTIJO ======================
 */
 
 
+#ul_boton{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 40;
+    overflow: hidden;
+    background-color: rgb(230, 229, 222);
+}
+.li_botones {
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+    float: left;
+
+}
+
+#boton_datos{
+
+    display: block;
+    padding: 0px;
+    background-color: rgb(230, 229, 222);
+    padding-left: 0px;
+
+}
+
 #caja_boton_acertijo{
 
-    padding-left: 300px;
+    padding-left: 30px;
     padding-right: 910px;
 
 }
@@ -183,10 +207,9 @@ li a:hover {
 #boton_acertijo{
 
     display: block;
-    padding: 5px;
+    padding: 0px;
     background-color: rgb(230, 229, 222);
-    padding-left: 8px;
-
+    padding-left: 20px;
 
 }
 
@@ -217,3 +240,29 @@ li a:hover {
 
 }
 
+/*
+================ LATEX ======================
+*/
+
+.latex{
+
+    padding-left: 420px;
+
+}
+
+.latex_text{
+
+    font-size: 18px;
+    padding-left: 160px;
+
+}
+.latex_paragraf{
+
+    padding-left: 90px;
+}
+
+.imagen_datos_historicos{
+
+    padding-left: 90px;
+
+}
