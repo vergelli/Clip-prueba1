@@ -55,21 +55,21 @@ Los datos fueron obtenidos de<a href="https://www.argentina.gob.ar/coronavirus/i
 <div class="latex">AR\;\doteq\;"Altas\;Reportadas"</div>
 <br>
 <p class = latex_text>Definiciones</p>
-<div class="latex">CPRA \doteq \sum\limits_{i = 1}^{n}CPR_i</div>
+<div class="latex">CPRA \doteq \sum\limits_{i = 0}^{n}CPR_i</div>
 <br>
-<div class="latex">DRA \doteq \sum\limits_{i = 1}^{n}DR_i</div>
+<div class="latex">DRA \doteq \sum\limits_{i = 0}^{n}DR_i</div>
 <br>
-<div class="latex">ARA \doteq \sum\limits_{i = 1}^{n}AR_i</div>
+<div class="latex">ARA \doteq \sum\limits_{i = 0}^{n}AR_i</div>
 <br>
-<p class = latex_text>donde n es el n-esimo dia desde el primer caso reportado</p>
+<p class = latex_text>donde n es el n-esimo dia desde el primer reporte</p>
 <br>
 <br>
 <p class = latex_paragraf>"Curva de infectados"<br>CPRA, (CPRA-DRA-ARA), DRA, ARA <p>
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="curva_nacional.html" height="525" width="100%"></iframe>
 <br>
-<p class = latex_text>Donde "I" puede verse como</p>
+<p class = latex_text>Donde 'I' es </p>
 <br>
-<div class="latex">I_i \doteq \sum\limits_{i = 1}^{n}CPR_i - \sum\limits_{i = 1}^{n}DR_i - \sum\limits_{i = 1}^{n}AR_i</div>
+<div class="latex">I_i \doteq - \sum\limits_{i = 0}^{n}DR_i - \sum\limits_{i = 0}^{n}AR_i + \sum\limits_{i = 0}^{n}CPR_i</div>
 <br>
 <p class = latex_paragraf>"CPR por provincias"<br>
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="curva_provincias.html" height="525" width="100%"></iframe>

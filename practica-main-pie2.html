@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="jquery.jslatex.js"></script>
     <meta name="description" content="Atributos de Tablas">
     <meta charset="UTF-8">
-    <title>Covid-19 - Argentina</title>
     <link rel="stylesheet" href="estilos.css" type="text/css">
+    <title>Covid-19 - Argentina</title>
 </head>
 
 <body>
 
+    <script>
+        $(function () {
+            $(".latex").latex();
+        });
+    </script>
 
     <main>
         <p>Visualizacion de los datos a desde un pie chart</p>
         <a href='practica-main3.html'target= "_self"> Volver</a>
 
         <img src="pie2.png" alt="Pie chart 2" type="img">
+        <img src="cpr_provincia_actual.png" alt="Bar Chart 1" type="img">
+        <img src="cpr_poblacion_provincia_actual.png" alt="Bar Chart 2" type="img">
     </main>
+
+<p class = latex_paragraf>Para estimar la cantidad de habitantes de cada provincia use los datos poblacionales obtenidos de la wiki.<br>
+Como los censos se realizan cada 10 años en Argentina, y los años para los cuales tenemos informacion son 2001 y 2010, y teniendo en cuenta tambien<br>
+que la dinamica poblacional es creciente en toda america latina, lo que hice fue una funcion para estimar los valores de habitantes para el año 2020.<br>
+Si usamos la ecuacion de la recta que une dos puntos en R^2</p>
+<div class="latex">y = \frac{(x - x_2)}{(x_2 - x_1)}(y_2 - y_1) + y_2</div> 
+<br>
+<p class = latex_paragraf>donde x es el parametro de entrada de la funcion (x = 2020)<br>
+Por ejemplo, para La ciudad autonoma de Buenos Aires, definimos:</p>
+<pre class = latex_pre>
+Pythyon
+def p_creciente_CABA(x):
+    
+    x = float(x)
+    y = ((x - 2001)/(2010 - 2001))*(2890151 - 2776138) + 2776138 
+    return (float("{}".format(float(y))))
+</pre>
+<br>
+<br>
+<br>
+<br>
+
+
 
 </body>
 </html>
